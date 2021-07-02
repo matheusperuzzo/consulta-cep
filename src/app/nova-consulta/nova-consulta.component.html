@@ -1,0 +1,12 @@
+<section class="container">
+  <form (ngSubmit)="pesquisar()" class="formulario">
+    <h1 class="titulo">Nova Consulta</h1>
+    <div class="form-field">
+      <label for="cep" class="label">Digite o CEP:</label>
+      <input id="cep" name="cep" class="input" [(ngModel)]="cep">
+      <button type="submit" class="botao">Pesquisar</button>
+    </div>
+  </form>
+</section>
+
+

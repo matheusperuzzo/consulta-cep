@@ -1,0 +1,43 @@
+.consultas {
+  font-family: 'Source Code Pro', monospace;
+  color: rgba(33, 77, 170, 1);
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+table{
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid rgba(33, 77, 170, 1);
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(33, 77, 170, 0.7);
+}
+
+th {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+td {
+  text-align: center;
+}
+
+.endereco {
+  width: 610px;
+}
+
+.cidade {
+  width: 300px;
+}
+
+.border-left {
+  border-left: 1px solid;
+}
+
+.border-top {
+  border-top: 1px solid
+}

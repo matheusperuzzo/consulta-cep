@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Endereco } from './models/endereco';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'consulta-cep';
+  enderecos: Array<Endereco> = [];
+
+  pesquisar($event: any){
+    this.enderecos = $event;
+    console.log(this.enderecos);
+  }
 }

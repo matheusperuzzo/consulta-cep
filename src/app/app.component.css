@@ -1,0 +1,26 @@
+header {
+  background-color: rgb(33, 94, 226);
+  color: white;
+  padding: 20px 0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+
+.caixa {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(33, 94, 226);
+  color: white;
+  padding: 20px 0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}

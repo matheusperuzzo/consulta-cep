@@ -1,0 +1,30 @@
+<div class="consultas">
+  <h2 class="titulo">Consultas Realizadas</h2>
+  <table class="table-round-corner" cellSpacing='0'>
+    <thead>
+      <th class="endereco">Endereço</th>
+      <th class="border-left cidade">Cidade</th>
+      <th class="border-left">UF</th>
+      <th class="border-left">Data e Hora da Consulta</th>
+    </thead>
+    <tbody *ngIf="enderecos.length > 0; else vazio">
+      <tr *ngFor="let endereco of enderecos" class="table-body">
+        <td class="border-top" *ngIf="endereco.logradouro.length > 1; else semEndereco">{{ endereco?.logradouro }}, {{ endereco?.bairro }}</td>
+        <td class="border-top border-left">{{ endereco?.localidade }}</td>
+        <td class="border-top border-left">{{ endereco?.uf }}</td>
+        <td class="border-top border-left">{{ endereco.data | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #vazio>
+  <td class="border-top">-</td>
+  <td class="border-top border-left">-</td>
+  <td class="border-top border-left">-</td>
+  <td class="border-top border-left">-</td>
+</ng-template>
+
+<ng-template #semEndereco>
+  <td class="border-top">Sem Endereço</td>
+</ng-template>
